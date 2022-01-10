@@ -117,6 +117,7 @@ i{
    
   }
 
+
 .posicion-play{
     position: absolute;
     bottom: 85px; /*your button position*/
@@ -126,3 +127,9 @@ i{
 .img-holder {position: relative;}
 
 /* efecto hover: se ve del mouckup mediante la clase btn */
+
+.posicion-arrow-left{
+    position: absolute;
+    bottom: 85px; /*your button position*/
+    right: 132px; /*your button position*/
+}
