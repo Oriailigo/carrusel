@@ -25,12 +25,12 @@
         <div class="row">
             <div class="col s12">
                 <h1 class="center-align titulo">Seccion de juegos</h1>
-                <button class="slick-arrow slick-prev" id="button-prev" onclick="prev()">
+                <button class="slick-arrow slick-prev" id="button-prev" onclick="prev()" aria-controls="myCarousel-items" aria-label="Presione enter para ir a la imagen anterior.>
                         <img src="./img/arrow-bar-left.svg">
                     </button>
-                <div class="carousel center-align" aria-labelledby="carouselheading">
+                <div class="carousel center-align" aria-labelledby="carouselheading" id="myCarousel-items" aria-live="off">
                     
-                    <div class="carousel-item " tabindex="0" aria-label="Haga click si decea jugar este juego"> 
+                    <div class="carousel-item "  role="group" aria-roledescription="slide" aria-label="1 de 6"> 
                                         
                             <div class="card-content">
                                 <div class="sideBar-img img-holder">
@@ -51,7 +51,7 @@
                     
                         </div>
 
-                    <div class="carousel-item " tabindex="0" aria-label="Haga click si decea jugar este juego"> 
+                    <div class="carousel-item "  role="group" aria-roledescription="slide" aria-label="2 de 6"> 
                                         
                         <div class="card-content">
                             <div class="sideBar-img img-holder">
@@ -72,7 +72,7 @@
                 
                     </div>
                         
-                    <div class="carousel-item " tabindex="0" aria-label="Haga click si decea jugar este juego"> 
+                    <div class="carousel-item "  role="group" aria-roledescription="slide" aria-label="3 de 6"> 
                                             
                         <div class="card-content">
                             <div class="sideBar-img img-holder">
@@ -91,7 +91,7 @@
                     
                 
                     </div>
-                    <div class="carousel-item " tabindex="0" aria-label="Haga click si decea jugar este juego"> 
+                    <div class="carousel-item "  role="group" aria-roledescription="slide" aria-label="4 de 6"> 
                                                 
                         <div class="card-content">
                             <div class="sideBar-img img-holder">
@@ -110,7 +110,7 @@
                     
                 
                     </div>
-                    <div class="carousel-item " tabindex="0" aria-label="Haga click si decea jugar este juego"> 
+                    <div class="carousel-item "  role="group" aria-roledescription="slide" aria-label="5 de 6"> 
                                                     
                         <div class="card-content">
                             <div class="sideBar-img img-holder">
@@ -129,7 +129,7 @@
                         </div>
                                     
                     </div>   
-                    <div class="carousel-item " tabindex="0" aria-label="Haga click si decea jugar este juego" >                                             
+                    <div class="carousel-item "  role="group" aria-roledescription="slide" aria-label="6 de 6" >                                             
                         <div class="card-content">
                             <div class="sideBar-img img-holder">
                                 <img src="./img/6.jpg" alt="juego6">
@@ -154,7 +154,7 @@
                 <!-- Next and previous buttons -->
                 <!-- <i class="carousel fas fa-arrow-circle-left fa-5x posicion-arrow-left"></i>
                 <i class="carousel fas fa-arrow-circle-right fa-5x"></i> -->
-                <button class="slick-arrow slick-next" id="button-next" onclick="next()">
+                <button class="slick-arrow slick-next" id="button-next" onclick="next()" aria-controls="myCarousel-items" aria-label="Presione enter para ir a la imagen siguiente>
                     <img src="./img/arrow-bar-right.svg">
                 </button>
             </div>
