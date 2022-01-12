@@ -25,11 +25,11 @@
         <div class="row">
             <div class="col s12">
                 <h1 class="center-align titulo">Seccion de juegos</h1>
-
-                <div class="carousel center-align" aria-labelledby="carouselheading">
-                    <!-- <button class="slick-arrow slick-prev" id="button-prev">
+                <button class="slick-arrow slick-prev" id="button-prev" onclick="prev()">
                         <img src="./img/arrow-bar-left.svg">
-                    </button> -->
+                    </button>
+                <div class="carousel center-align" aria-labelledby="carouselheading">
+                    
                     <div class="carousel-item " tabindex="0" aria-label="Haga click si decea jugar este juego"> 
                                         
                             <div class="card-content">
@@ -149,14 +149,14 @@
                     
 
                     </div>   
-                    <button class="slick-arrow slick-next" id="button-next">
-                        <img src="./img/arrow-bar-right.svg">
-                    </button>
+                   
                 </div>
                 <!-- Next and previous buttons -->
                 <!-- <i class="carousel fas fa-arrow-circle-left fa-5x posicion-arrow-left"></i>
                 <i class="carousel fas fa-arrow-circle-right fa-5x"></i> -->
-                
+                <button class="slick-arrow slick-next" id="button-next" onclick="next()">
+                    <img src="./img/arrow-bar-right.svg">
+                </button>
             </div>
         </div>
     </div>
