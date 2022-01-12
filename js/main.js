@@ -9,7 +9,16 @@ document.addEventListener('DOMContentLoaded', () => {
         numVisible: 3,
         indicators: false,
         noWrap: false
+        // fullWidth: true
     });
+
+    var instance = M.Carousel.getInstance(elementosCarousel);
+    const botonNext = document.getElementById('button-next');
+    botonNext.onclick = () => instance.next(2);
+    // botonNext.addEventListener("onclick",()=>{
+            
+    // })
+    
 });
 
 // const elementos = document.querySelectorAll('.carousel').addEventListener("click");
