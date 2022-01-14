@@ -6,8 +6,8 @@
 }
 
 .carousel .carousel-inner {
-    max-height: 480px;
-    max-width: 640px;
+    max-height: 300%;
+    max-width: 800%;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -20,7 +20,7 @@
     max-width: 640px;
     position: relative;
     overflow: hidden;
-    width: 100%;
+    width: 400%;
 }
 
 .carousel .carousel-item.active {
@@ -156,7 +156,7 @@ i{
 .posicion-play{
     position: absolute;
     bottom: -50px; /*your button position*/
-    right: -350px; /*your button position*/
+    right: -391px; /*your button position*/
     
 }
 

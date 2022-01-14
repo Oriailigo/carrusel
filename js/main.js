@@ -29,3 +29,12 @@ document.addEventListener('DOMContentLoaded', function() {
         l.prev(1);
     }
 })
+
+CarouselItem.prototype.hide = function () {
+    this.domNode.classList.remove('active');
+  };
+  
+  CarouselItem.prototype.show = function () {
+    this.domNode.classList.add('active');
+  };
+  
