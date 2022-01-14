@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     //carousel Next function
     window.next = function() {
+      
       var el = document.querySelector(".carousel");
       var l = M.Carousel.getInstance(el);
       l.next(1);
@@ -28,7 +29,32 @@ document.addEventListener('DOMContentLoaded', function() {
         var l = M.Carousel.getInstance(el);
         l.prev(1);
     }
+
+// ME quedo con las teclas
+    window.onload=function(){
+      document.onkeyup =teclas;
+    }
+    function teclas(event){
+      var codigo= event.keyCode;
+      console.log(codigo);
+      if(codigo===37){
+          console.log("holaa 37");
+          var el = document.querySelector(".carousel");
+          var l = M.Carousel.getInstance(el);
+          l.prev(1);
+      }
+      if(codigo===39){      
+          var el = document.querySelector(".carousel");
+          var l = M.Carousel.getInstance(el);
+          l.next(1);
+      }
+
+    }
+    
+    
 })
+
+
 
 CarouselItem.prototype.hide = function () {
     this.domNode.classList.remove('active');
