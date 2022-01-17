@@ -25,11 +25,12 @@ body {
 }
 
 .subtitulo {
-    color: #FFFFFF;
+    color: #ffffff;
     font-family: Source Serif Pro;
     font-size: 29px;
     line-height: 37.5px;
-    width: 375px;
+    margin: .5rem;
+    width: auto;
     text-align: left;
 }
 
@@ -38,8 +39,8 @@ body {
     font-family: Source Serif Pro;
     font-size: 21px;
     line-height: 27px;
-    width: 375px;
-    text-align: left;
+    width: auto;
+    text-align: justify;
 }
 
 .linea-division {

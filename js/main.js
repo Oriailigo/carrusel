@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     M.AutoInit();
 
-   
+    resetTab()
 
     //carousel activation
     var elems = document.querySelectorAll('.carousel');
@@ -42,11 +42,17 @@ document.addEventListener('DOMContentLoaded', function() {
           var el = document.querySelector(".carousel");
           var l = M.Carousel.getInstance(el);
           l.prev(1);
+          // resetTab();
+          // aux1 = document.getElementsByClassName('carousel-item active').children[0].children[1].tabIndex = 0
+          // console.log(aux1);
       }
       if(codigo===39){      
           var el = document.querySelector(".carousel");
           var l = M.Carousel.getInstance(el);
           l.next(1);
+          // resetTab();
+          // aux2 = document.getElementsByClassName('carousel-item active').children[0].children[1].tabIndex = 0
+          // console.log(aux2);
       }
 
     }
@@ -64,3 +70,10 @@ CarouselItem.prototype.hide = function () {
     this.domNode.classList.add('active');
   };
   
+
+  function resetTab() {
+    aux = document.getElementsByClassName('carousel-item');
+    for (i=0; i < aux.length ; i++){
+      aux[i].children[0].children[1].tabIndex = -1
+    }    
+  }
